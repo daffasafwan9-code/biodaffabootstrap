@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daffa Muhammad Safwan | Digital Business Portfolio</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --accent-color: #00d2ff;
+            --secondary-accent: #92fe9d;
+            --bg-dark: #0f172a;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(102, 126, 234, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(118, 75, 162, 0.15) 0%, transparent 40%);
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-img-container {
+            position: relative;
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 25px;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid transparent;
+            background: linear-gradient(var(--bg-dark), var(--bg-dark)) padding-box,
+                        var(--primary-gradient) border-box;
+            padding: 5px;
+        }
+
+        .status-badge {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: var(--secondary-accent);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 3px solid var(--bg-dark);
+            box-shadow: 0 0 15px var(--secondary-accent);
+        }
+
+        h1 {
+            font-weight: 700;
+            background: linear-gradient(to right, #fff, var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .bio-section {
+            background: rgba(0, 210, 255, 0.05);
+            border-left: 4px solid var(--accent-color);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .info-table td {
+            padding: 12px 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: #e2e8f0;
+        }
+
+        .info-label {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: 40%;
+        }
+
+        .hobby-pill {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid var(--glass-border);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .hobby-pill:hover {
+            background: var(--primary-gradient);
+            border-color: transparent;
+        }
+
+        .btn-contact {
+            background: var(--primary-gradient);
+            border: none;
+            border-radius: 12px;
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-contact:hover {
+            opacity: 0.9;
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="glass-card text-center">
+                
+                <div class="profile-img-container">
+                    <img src="WhatsApp Image 2026-04-14 at 14.32.21.jpeg" alt="Daffa Profile" class="profile-img">
+                    <div class="status-badge" title="Available for Collaboration"></div>
+                </div>
+                
+                <h1 class="mb-2">Daffa Muhammad Safwan</h1>
+                <p class="text-info fw-medium mb-4">
+                    <i class="bi bi-mortarboard-fill me-2"></i>Digital Business Student @ UNIMED
+                </p>
+
+                <div class="row g-4 text-start mt-2">
+                    <div class="col-12">
+                        <div class="bio-section">
+                            <h6 class="text-info fw-bold mb-2 small"><i class="bi bi-lightbulb-fill me-2"></i>MISSION STATEMENT</h6>
+                            <p class="mb-0 small opacity-90">
+                                Berfokus pada pengembangan sistem <span class="text-info fw-bold">Game Entrepreneurship</span> yang profesional. Membangun ekosistem jual beli dan jasa <em>boosting</em> (joki) yang sistematis, aman, dan berskala besar melalui pendekatan Bisnis Digital.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7">
+                        <h6 class="text-white-50 mb-3 small fw-bold">PERSONAL INFORMATION</h6>
+                        <table class="table table-borderless info-table">
+                            <tr>
+                                <td class="info-label">NIM</td>
+                                <td class="fw-semibold">7243250007</td>
+                            </tr>
+                            <tr>
+                                <td class="info-label">Kelahiran</td>
+                                <td>Medan, 09 Januari 2007</td>
+                            </tr>
+                            <tr>
+                                <td class="info-label">Lokasi</td>
+                                <td>Helvetia, Medan</td>
+                            </tr>
+                            <tr>
+                                <td class="info-label">Visi</td>
+                                <td class="text-info">Expert Entrepreneur</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="col-md-5">
+                        <h6 class="text-white-50 mb-3 small fw-bold">INTERESTS & HOBBIES</h6>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="hobby-pill">🏸 Badminton</span>
+                            <span class="hobby-pill">📖 Reading</span>
+                            <span class="hobby-pill">🎮 Gaming</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 pt-4 border-top border-secondary border-opacity-10">
+                    <p class="small text-white-50 mb-0">&copy; 2026 Daffa Muhammad Safwan • Medan, Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
